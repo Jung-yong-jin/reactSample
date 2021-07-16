@@ -68,7 +68,7 @@ var newkey1 = obj.key1; // 객체의 키값을 다른 변수에 할당합니다.
 var list = [0, 1];
 //대괄호 블록[] 사이에 추출 하고자 하는 값의 인텍스 위치에 변수를 배치
 var [item1, item2, item3 = -1] = list;
-[item2, item1] = [item1, item2];
+[item2, item1] = [ㅊㅇ, item2];
 
 var obj = {
   key1: 'one1',

@@ -1,4 +1,4 @@
-//병합연산자 (+)
+//병합 연산자 (+)
 var string1 = '안녕하세요';
 var string2 = '반갑습니다';
 var greeting = string1 + ' ' + string2; //병합 연산자를 사용해 문자열과 문자열을 연결하고 있습니다.
@@ -31,4 +31,5 @@ var getTotal = function (cart) {
 };
 
 var myCart = `장바구니에 ${cart.name} 가 있습니다. 총 금액은 ${getTotal(cart)} 입니다.`;
+
 console.log(myCart);
