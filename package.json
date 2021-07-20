@@ -23,6 +23,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "selector-action": "^1.2.0",
+    "shallow-equal": "^1.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
