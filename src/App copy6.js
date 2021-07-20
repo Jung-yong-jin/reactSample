@@ -1,7 +1,7 @@
 import './App.css';
 
 import React, { Component } from 'react';
-import TestCode from './03/TestCode';
+import StateExample from './03/StateExample';
 
 // class App extends Component {
 //   render() {
@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TestCode />
+        <StateExample />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import './App.css';
 
 import React, { Component } from 'react';
-import TestCode from './03/TestCode';
+import ChildProperty from './03/ChildProperty';
 
 // class App extends Component {
 //   render() {
@@ -22,7 +22,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TestCode />
+        <ChildProperty
+          children={
+            <div>
+              <span>자식노드2</span>
+            </div>
+          }
+        />
       </div>
     );
   }
