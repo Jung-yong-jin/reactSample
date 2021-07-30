@@ -2,19 +2,11 @@ import './sass/materialize.scss';
 import './App.css';
 
 import React, { Component } from 'react';
+import { default as Text } from './components/text/Text.stories';
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <nav>
-          <div className="nav-wrapper">
-            <div>두잇! 리액트 시작하기</div>
-          </div>
-        </nav>
-        <h1>머티리얼 CSS</h1>
-      </div>
-    );
+    return <div>{Text.node}</div>;
   }
 }
 
