@@ -14,11 +14,11 @@ class InputWithStyle extends React.Component {
           onChange={this.handleChange}
           value={value}
         />
-        <label className="active" for={`input_${name}`}>
+        <label className="active" htmlFor={`input_${name}`}>
           {label}
         </label>
         {errorMessage && (
-          <span className="helper-text" data-error={errorMessage}>
+          <span className="error" data-error={errorMessage}>
             {errorMessage}
           </span>
         )}

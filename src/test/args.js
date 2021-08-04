@@ -146,4 +146,5 @@ var objectThree = {
 var combined = { ...objectOne, ...objectTwo, ...objectThree };
 var { ...othersw } = combined;
 
-console.log(othersw);
+//console.log(othersw);
+console.log({ ...objectThree });
