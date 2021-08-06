@@ -7,7 +7,7 @@
 //enzyme 설정 함수 configure()를 임포트 합니다.
 import { configure } from 'enzyme';
 //리액트 16.3 생명주기 라이브러리를 임포트 합니다.
-import Adapter from 'enzyme-adapter-react-16.3';
+import Adapter from 'enzyme-adapter-react-16';
 
 import * as Aphrodite from 'aphrodite';
 import * as AphroditeNoImportant from 'aphrodite/no-important';

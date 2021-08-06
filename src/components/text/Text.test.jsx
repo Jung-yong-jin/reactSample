@@ -13,10 +13,16 @@ describe('<Text /> Test Code', () => {
 
   it('contains <span>', () => {
     console.log(shallow(<Text>테스트</Text>).html());
-    expect(
-      shallow(<Text>테스트</Text>)
-        .dive()
-        .find('span'),
-    ).toHaveLength(1);
+
+    const compHtml = shallow(<Text>테스트</Text>).html();
+    console.log(String(compHtml));
+
+    console.log(
+      expect(() => {
+        shallow(<Text>테스트</Text>)
+          .dive()
+          .find('span');
+      }),
+    );
   });
 });
