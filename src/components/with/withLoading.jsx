@@ -7,7 +7,7 @@ export default function (loadingMessage = '로딩 중') { //확장 컴포넌트�
     const wrappedComponentName = displayName || componentName; //displayName, name 순서로 이름을 할당 합니다.
 
     function WithLoading({ isLoading, ...otherProps }) {
-      if (props.isLoading) return loadingMessage;
+      if (isLoading) return loadingMessage;
 
       return <WrappedComponent {...otherProps} />;
     }

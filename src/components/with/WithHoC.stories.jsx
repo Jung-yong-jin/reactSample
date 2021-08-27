@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from '../button/index';
 import Text from '../text/Index';
-import withHoC from './WithHoC';
+import WithHoc from './WithHoC';
 
 export default {
   title: 'Example/WithHoc',
-  Comment: withHoC,
+  component: WithHoc,
 };
 
-const ButtonWithHoC = withHoC(Button);
-const TextWithHoC = withHoC(Text);
+const ButtonWithHoC = WithHoc(Button);
+const TextWithHoC = WithHoc(Text);
 
 const Template = (args) => (
   <div>
