@@ -19,6 +19,8 @@ export default class FormProvider extends React.Component {
     
     //Input 컴포넌트에서 입력값이 변경될 때 실행될 콜백 함수입니다.
     onChange(name, updateValue){
+
+        console.log('onChange');
         this.setState( ({values}) => ({
                         values: {   ...values,
                                     [name]: updateValue //입력값 values의 새값으로 변경합니다.
@@ -64,4 +66,9 @@ export default class FormProvider extends React.Component {
 
 FormProvider.propTypes = {
     validate: PropTypes.func,
-}
+    onSubmit: PropTypes.func.isRequired,
+};
+
+FormProvider.defaultProps = {
+    validate: () => ({}),
+};  
